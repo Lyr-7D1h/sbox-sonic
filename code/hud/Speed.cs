@@ -21,13 +21,7 @@ namespace sonic.hud
 
 			var maxSpeed = Math.Max( Math.Abs( player.Velocity.x ), Math.Abs( player.Velocity.y ) );
 
-			Log.Info( maxSpeed );
-			if ( maxSpeed > 700 )
-			{
-
-			}
-
-			Label.Text = $"{player.Health.CeilToInt()}";
+			Label.Text = $"{maxSpeed.FloorToInt()}";
 		}
 	}
 }

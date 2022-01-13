@@ -17,14 +17,13 @@ namespace sonic
 		{
 			if ( IsServer )
 			{
-				Log.Info( "My Gamemode Has Created Serverside!" );
-
+				Log.Info( "Sonic: started game" );
 				new Hud();
 			}
 
 			if ( IsClient )
 			{
-				Log.Info( "My Gamemode Has Created Clientside!" );
+				Log.Info( "" );
 			}
 		}
 
